@@ -7,3 +7,5 @@ services:
     environment:
       - TARGET_DATE=2025-01-01T00:00:00
       - VIDEO_FILENAME=somevideo.mp4
+    volumes:
+      - ./public/assets:/app/public/assets
