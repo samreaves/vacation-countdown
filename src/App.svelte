@@ -23,7 +23,7 @@
 		// Validate the date
 		if (isNaN(targetDate.getTime())) {
 			console.warn('Invalid TARGET_DATE, using default date');
-			targetDate = new Date('2025-1-1T00:00:00');
+			targetDate = new Date('2025-01-01T00:00:00');
 		}
 
 		updateCountdown();
@@ -131,9 +131,6 @@
 
 	:global(#app) {
 		min-height: 100vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		position: relative;
 	}
 
@@ -196,22 +193,8 @@
 	}
 
 	.countdown-container {
-		background: linear-gradient(135deg, 
-			rgba(0, 102, 204, 0.5) 0%, 
-			rgba(0, 170, 255, 0.5) 25%,
-			rgba(255, 140, 0, 0.5) 50%,
-			rgba(255, 69, 0, 0.5) 75%,
-			rgba(255, 20, 147, 0.5) 100%
-		);
-		border-radius: 25px;
 		padding: 1rem;
 		color: white;
-		box-shadow: 
-			0 15px 35px rgba(0, 0, 0, 0.4),
-			0 5px 15px rgba(0, 0, 0, 0.2),
-			inset 0 1px 0 rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(10px);
-		border: 2px solid rgba(255, 255, 255, 0.1);
 		position: relative;
 		overflow: hidden;
 	}
@@ -223,8 +206,6 @@
 		left: -50%;
 		width: 200%;
 		height: 200%;
-		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-		animation: shimmer 3s ease-in-out infinite;
 		pointer-events: none;
 	}
 
