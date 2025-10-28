@@ -231,7 +231,7 @@
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1.2rem;
 		margin-bottom: 2rem;
-		opacity: 0.9;
+		opacity: 1;
 		font-style: italic;
 		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 		position: relative;
@@ -358,6 +358,11 @@
 		.countdown-container {
 			padding: 1rem;
 			margin: 1rem;
+		}
+
+		.wave-icon {
+			margin: 0 0.5rem;
+
 		}
 	}
 </style>
