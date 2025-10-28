@@ -353,7 +353,7 @@
 		
 		.time-unit {
 			min-width: 100px;
-			padding: 1.5rem;
+			padding: 0.5rem;
 		}
 		
 		.time-value {
